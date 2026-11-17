@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 /*
- * The Atari ROMs: files in the data folder's roms/ (emu_rom_read()), named as on the boards.
+ * The Atari ROMs: files in the machine's roms/ folder (emu_rom_read()), named as on the boards.
  */
 typedef enum {
     ROM_OS,                     /* atarixl.rom: XL/XE OS, 16 KB */

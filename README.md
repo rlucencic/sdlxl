@@ -125,7 +125,7 @@ cmake -S . -B build -G Ninja && cmake --build build
 
 ### 3. ROMs
 
-In the data folder's `roms/` (`~/rpi5emu/roms`), named as esp32xl's:
+In the data folder's `xl/roms/` (`~/rpi5emu/xl/roms`), named as esp32xl's:
 `atarixl.rom` (the XL/XE OS, 16 KB) and `ataribas.rom` (BASIC, 8 KB). Not
 part of this repository.
 
@@ -133,7 +133,7 @@ part of this repository.
 
 1. `build/rpi5xl`: the setup screen opens in a window.
 2. Choose the model and click **Start**.
-3. Put images into `~/rpi5emu/atari/`, drop them on the window or the web page, and
+3. Put images into `~/rpi5emu/xl/`, drop them on the window or the web page, and
    insert them on the setup screen's **Disks** page.
 
 ## Using it
@@ -152,7 +152,7 @@ part of this repository.
 | Load a BASIC program | `RUN "D:NAME.BAS"` (or `LOAD`, `ENTER` for listings) |
 | Self Test | `BYE` in BASIC, or start with BASIC off and no disk |
 
-Images live in `~/rpi5emu/atari/`, settings in `~/.config/rpi5emu/settings.ini`; the
+Images live in `~/rpi5emu/xl/`, settings in `~/.config/rpi5emu/settings.ini`; the
 inserted images are remembered across starts. `build/rpi5xl --help` lists the options.
 
 **Keyboard**: letters by position; digits and symbols by the character they
@@ -184,7 +184,7 @@ flowchart LR
   EMU -- picture --> WIN
   EMU -- sound --> SND[SDL audio]
   WIN -- keys · mouse --> EMU
-  DATA[("~/rpi5emu<br>roms · atari")]
+  DATA[("~/rpi5emu<br>xl · xl/roms")]
   EMU <--> DATA
   WEB <--> DATA
 ```

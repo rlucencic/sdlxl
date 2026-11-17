@@ -59,7 +59,7 @@ static bool start(void)
     }
     if (!rom_store_load(ROM_OS, s_os)) {
         static char message[1400];
-        snprintf(message, sizeof(message), "No XL/XE OS ROM: copy atarixl.rom into %s/roms.", emu_data_dir());
+        snprintf(message, sizeof(message), "No XL/XE OS ROM: copy atarixl.rom into %s.", emu_rom_dir());
         emu_set_message(message);
         return false;
     }
@@ -377,7 +377,7 @@ static const disks_size_t sizes[] = {
 };
 
 static const disks_config_t disks = {
-    .folder = "atari",
+    .folder = "xl",
     .extensions = extensions,
     .description = "Disk images (.ATR .XFD)",
     .title = "Disk drives",
