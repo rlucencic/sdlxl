@@ -1,8 +1,8 @@
 /*
- * Atari 800XL and 130XE emulator on the Raspberry Pi 5.
+ * Atari 800XL and 130XE emulator with SDL 3.
  *
  * The Pi's side (window, sound, keyboard, setup screen, web page, console,
- * settings, the data folder) is the shared runtime in ../rpi5emu, the
+ * settings, the data folder) is the shared runtime in ../sdlemu, the
  * machine esp32xl's; this file plugs the Atari into it, as esp32xl's
  * main/main.c does on the boards (and mostly is that file): memory,
  * ROMs, settings, keyboard map, joystick, drives D1: and D2:, status.
